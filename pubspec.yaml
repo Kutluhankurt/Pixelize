@@ -1,0 +1,38 @@
+name: nano_banana_pro
+description: Pixelize - AI-powered pixel art avatar generator
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.3.6
+  supabase_flutter: ^1.4.0
+  http: ^0.13.6
+  cached_network_image: ^3.2.3
+  image_picker: ^0.8.7+5
+  flutter_animate: ^4.0.0
+  permission_handler: ^10.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Pixel fonts
+  fonts:
+    - family: PressStart2P
+      fonts:
+        - asset: assets/fonts/PressStart2P-Regular.ttf
+    - family: PixelOperator
+      fonts:
+        - asset: assets/fonts/PixelOperator.ttf
+    - family: VCR_OSD_MONO
+      fonts:
+        - asset: assets/fonts/VCR_OSD_MONO.ttf
